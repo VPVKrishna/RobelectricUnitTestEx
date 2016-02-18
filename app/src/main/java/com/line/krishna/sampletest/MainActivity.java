@@ -7,10 +7,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
+/**
+ * https://github.com/mutexkid/android-studio-robolectric-example
+ */
 public class MainActivity extends ActionBarActivity {
 
-    Button mClickMeButton;
     TextView mHelloWorldTextView;
+    Button mClickMeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

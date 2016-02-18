@@ -1,5 +1,7 @@
 package com.line.krishna.sampletest;
 
+import android.widget.TextView;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +25,8 @@ public class MyActivityTest {
     @Test
     public void myActivityAppearsAsExpectedInitially() {
         assertThat(mActivity.mClickMeButton).hasText("click_me");
+        TextView textView = (TextView) mActivity.findViewById(R.id.helloWorldTextView);
+        assertThat(textView).hasText("Hello world!");
         assertThat(mActivity.mHelloWorldTextView).hasText("Hello world!");
     }
 
